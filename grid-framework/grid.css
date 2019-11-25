@@ -6,7 +6,13 @@
   font-family: sans-serif;
 }
 
-/* Selector for the a elements */
+/* remove style for the ul and li elements */
+ul,
+li {
+    list-style: none;
+}
+
+/* remove style for the a elements */
 a {
   text-decoration: none;
 }
