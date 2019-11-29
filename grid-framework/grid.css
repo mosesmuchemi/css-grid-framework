@@ -12,7 +12,7 @@ li {
     list-style: none;
 }
 
-/* remove style for the a elements */
+/* remove underline style for the a elements */
 a {
   text-decoration: none;
 }
@@ -135,11 +135,7 @@ a {
   position: fixed;
 }
 
-/* ==============================================================================
-MEDIA QUERIES STARTING AT 720PX
-============================================================================== */
-
-/* These rules will apply starting at 720px */
+/* These rules will apply starting at 720px for Laptops */
 @media (min-width: 720px) {
   /* Selector used to create a column that takes a twelfth of the grid width */
   .col-md-1 {
@@ -227,11 +223,7 @@ MEDIA QUERIES STARTING AT 720PX
   }
 }
 
-/* ==============================================================================
-MEDIA QUERIES STARTING AT 1024PX
-============================================================================== */
-
-/* These rules will apply starting at 1024px */
+/* These rules will apply starting at 1024px for Desktops */
 @media (min-width: 1024px) {
   /* Selector used to create a column that takes a twelfth of the grid width */
   .col-lg-1 {
