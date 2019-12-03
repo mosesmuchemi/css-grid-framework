@@ -5,6 +5,14 @@ body {
   color: #333;
   margin: 0;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header,
@@ -23,7 +31,34 @@ h5 {
   font-weight: 400;
 }
 
-a,
+a {
+  color: #43853d;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+p a {
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-right: -2px;
+  margin-left: -2px;
+}
+
+article a {
+  word-break: break-word;
+}
+
+footer a {
+  color: #ccc;
+}
+
+header nav a {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ccc !important;
+}
+
 a:link,
 a:active {
   color: #43853d;
@@ -34,6 +69,43 @@ a:active {
 a:hover {
   color: #fff;
   background-color: #43853d;
+}
+
+.nav-foundation a {
+  padding: 0 16px !important;
+}
+
+.home-secondary-links a {
+  color: #51744e;
+}
+
+footer a:link,
+footer a:active {
+  color: #ccc;
+}
+
+nav.pagination a {
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-right: -2px;
+  margin-left: -2px;
+}
+
+header .lang-picker a {
+  color: #ccc;
+}
+
+footer a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+header nav a:link,
+header nav a:active {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ccc !important;
 }
 
 a:hover code {
@@ -52,13 +124,6 @@ a.imagelink:hover {
 strong,
 b {
   font-weight: 600;
-}
-
-p a {
-  padding-right: 2px;
-  padding-left: 2px;
-  margin-right: -2px;
-  margin-left: -2px;
 }
 
 img {
@@ -98,18 +163,6 @@ iframe {
   border: none;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
 .flexboxtweener,
 .flexboxtweener body {
   height: 100%;
@@ -125,9 +178,6 @@ header,
 footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-footer {
   padding: 0 20px;
 }
 
@@ -148,8 +198,16 @@ footer {
   flex-direction: row;
 }
 
+header > .container {
+  overflow: visible;
+}
+
 #main .container {
   padding: 0 20px;
+}
+
+header li {
+  position: relative;
 }
 
 .list-divider-pipe {
@@ -231,25 +289,8 @@ header {
   position: relative;
 }
 
-header>.container {
-  overflow: visible;
-}
-
-header li {
-  position: relative;
-}
-
 header nav {
   cursor: default;
-}
-
-header nav a,
-header nav a:link,
-header nav a:active {
-  padding: 0 8px;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #ccc !important;
 }
 
 header nav a:hover {
@@ -285,10 +326,6 @@ header .lang-picker.hidden {
   display: none;
 }
 
-header .lang-picker a {
-  color: #ccc;
-}
-
 header .lang-picker li {
   padding-bottom: 0;
 }
@@ -320,10 +357,6 @@ header .lang-picker li button:hover {
 
 .nav-foundation::before {
   content: none !important;
-}
-
-.nav-foundation a {
-  padding: 0 16px !important;
 }
 
 @media screen and (min-width: 481px) {
@@ -367,7 +400,7 @@ header .lang-picker li button:hover {
     padding: 0;
     margin: 0;
   }
-  
+
   header nav {
     margin: 0 20px;
   }
@@ -377,7 +410,7 @@ header .lang-picker li button:hover {
   header a:active {
     padding: 0;
   }
-  
+
   header .lang-picker-toggler {
     position: relative;
     height: 1.5em;
@@ -404,17 +437,6 @@ footer {
   padding: 0;
 }
 
-footer a,
-footer a:link,
-footer a:active {
-  color: #ccc;
-}
-
-footer a:hover {
-  background-color: transparent;
-  text-decoration: underline;
-}
-
 footer.no-margin-top {
   margin-top: 0;
 }
@@ -422,10 +444,6 @@ footer.no-margin-top {
 .home-secondary-links {
   color: #51744e;
   font-size: 0.9rem;
-}
-
-.home-secondary-links a {
-  color: #51744e;
 }
 
 .home-secondary-links a:hover {
@@ -460,7 +478,7 @@ footer.no-margin-top {
   font-size: 30px;
   font-weight: 400;
   -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .home-downloadbutton:hover {
@@ -470,13 +488,6 @@ footer.no-margin-top {
 .home-downloadbutton small {
   display: block;
   font-size: 1rem;
-}
-
-nav.pagination a {
-  padding-right: 2px;
-  padding-left: 2px;
-  margin-right: -2px;
-  margin-left: -2px;
 }
 
 html {
@@ -538,16 +549,12 @@ h6:hover > .anchor::before {
   content: "#";
 }
 
-article a {
-  word-break: break-word;
-}
-
 @media screen and (max-width: 480px) {
   .has-side-nav aside {
     width: 100%;
     float: none;
   }
-  
+
   .has-side-nav article {
     margin-left: 0;
   }
