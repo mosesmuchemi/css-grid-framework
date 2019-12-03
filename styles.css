@@ -210,28 +210,23 @@ header li {
   position: relative;
 }
 
-.list-divider-pipe {
-  margin: 0;
-  padding: 0;
-}
-
-.list-divider-pipe li {
+.col-d li {
   display: inline-block;
 }
 
-.list-divider-pipe li + li::before {
+.col-d li + li::before {
   content: "|";
   padding: 0 0.3em 0 0.1em;
   color: #999;
 }
 
 @media screen and (max-width: 480px) {
-  nav .list-divider-pipe {
+  nav .col-d {
     margin-bottom: 1rem;
     overflow: hidden;
   }
 
-  nav .list-divider-pipe li + li::before {
+  nav .col-d li + li::before {
     display: none;
   }
 }

@@ -38,6 +38,7 @@ a {
   justify-content: start;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 
 /* Selector used to create a column that takes a twelfth of the grid width */
@@ -98,6 +99,12 @@ a {
 /* Selector used to create a column that takes twelve twelfths of the grid width */
 .col-12 {
   flex-basis: calc((100% / 12) * 12);
+}
+
+/* Selector used to create a column division */
+.col-d {
+  margin: 0;
+  padding: 0;
 }
 
 /* Selector for display none */
