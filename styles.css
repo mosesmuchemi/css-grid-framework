@@ -1,5 +1,4 @@
 
-
 body {
   box-sizing: border-box;
   font: 400 20px/1.5 "Source Sans Pro", "Open Sans", Roboto, "San Francisco", Helvetica, Arial, sans-serif;
@@ -162,9 +161,9 @@ footer {
   display: inline-block;
 }
 
-.list-divider-pipe li+li::before {
+.list-divider-pipe li + li::before {
   content: "|";
-  padding: 0 .3em 0 .1em;
+  padding: 0 0.3em 0 0.1em;
   color: #999;
 }
 
@@ -173,7 +172,7 @@ footer {
     margin-bottom: 1rem;
     overflow: hidden;
   }
-  
+
   nav .list-divider-pipe li + li::before {
     display: none;
   }
@@ -189,7 +188,7 @@ footer {
 
 .linuxfoundation-footer p + p {
   margin-top: 0;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .issue-link-container {
@@ -202,7 +201,7 @@ footer {
 }
 
 .linuxfoundation-logo {
-  margin-top: .2em;
+  margin-top: 0.2em;
   min-width: 1px;
   max-width: 416px;
 }
@@ -218,7 +217,8 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-	.issue-link {
+
+  .issue-link {
     text-align: start;
     margin: 1em 0 0;
     min-width: 0;
@@ -303,7 +303,7 @@ header .lang-picker li button {
   font-size: 14px;
   line-height: 1.5;
   margin: 0 auto;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-transform: uppercase;
   width: 100%;
 }
@@ -345,17 +345,17 @@ header .lang-picker li button:hover {
     margin-left: -7px;
   }
 
-	header li.active:first-child::after {
+  header li.active:first-child::after {
     margin-left: -14px;
   }
 
-	header a,
-	header a:link,
-	header a:active {
+  header a,
+  header a:link,
+  header a:active {
     padding: 0 8px;
   }
 
-	.nav-foundation {
+  .nav-foundation {
     margin-left: 8px;
   }
 }
@@ -368,17 +368,17 @@ header .lang-picker li button:hover {
     margin: 0;
   }
   
-	header nav {
+  header nav {
     margin: 0 20px;
   }
 
-	header a,
-	header a:link,
-	header a:active {
+  header a,
+  header a:link,
+  header a:active {
     padding: 0;
   }
   
-	header .lang-picker-toggler {
+  header .lang-picker-toggler {
     position: relative;
     height: 1.5em;
     padding: 0;
@@ -395,7 +395,7 @@ header .lang-picker li button:hover {
 }
 
 #logo img {
-  margin: .5em auto 0;
+  margin: 0.5em auto 0;
 }
 
 footer {
@@ -421,7 +421,7 @@ footer.no-margin-top {
 
 .home-secondary-links {
   color: #51744e;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .home-secondary-links a {
@@ -453,13 +453,13 @@ footer.no-margin-top {
 .home-downloadbutton {
   display: block;
   margin: 10px 4px;
-  padding: .2em .6em;
+  padding: 0.2em 0.6em;
   background-color: #026e00;
   color: #fff !important;
   border-radius: 2px;
   font-size: 30px;
   font-weight: 400;
-  -webkit-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color .2s ease-in-out;
 }
 
@@ -502,8 +502,8 @@ html {
   text-align: center;
   padding: 0 5px 1px;
   opacity: 0;
-  -webkit-animation: buttonFade .5s 1s 1 forwards;
-  animation: buttonFade .5s 1s 1 forwards;
+  -webkit-animation: buttonFade 0.5s 1s 1 forwards;
+  animation: buttonFade 0.5s 1s 1 forwards;
 }
 
 @media (max-width: 600px) {
@@ -515,7 +515,7 @@ html {
 .anchor {
   color: #ccc;
   background: none;
-  padding: 0 .25em;
+  padding: 0 0.25em;
 }
 
 .anchor:link,
@@ -548,7 +548,7 @@ article a {
     float: none;
   }
   
-	.has-side-nav article {
+  .has-side-nav article {
     margin-left: 0;
   }
 }
