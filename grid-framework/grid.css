@@ -19,7 +19,7 @@
 /* remove style for the ul and li elements */
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* remove underline style for the a elements */

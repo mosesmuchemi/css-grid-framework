@@ -11,9 +11,9 @@ body {
 header,
 #main,
 footer {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h1,
@@ -81,11 +81,11 @@ iframe {
 }
 
 .table-no-border-no-padding {
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 .table-no-border-no-padding td {
-  padding: 0
+  padding: 0;
 }
 
 .sr-only {
@@ -169,13 +169,14 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-	nav .list-divider-pipe {
+  nav .list-divider-pipe {
     margin-bottom: 1rem;
     overflow: hidden;
-	}
-	nav .list-divider-pipe li+li::before {
+  }
+  
+  nav .list-divider-pipe li + li::before {
     display: none;
-	}
+  }
 }
 
 .linuxfoundation-footer {
@@ -186,7 +187,7 @@ footer {
   direction: ltr;
 }
 
-.linuxfoundation-footer p+p {
+.linuxfoundation-footer p + p {
   margin-top: 0;
   margin-bottom: .25em;
 }
@@ -216,12 +217,12 @@ footer {
   .issue-link-container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-	}
+  }
 	.issue-link {
     text-align: start;
     margin: 1em 0 0;
     min-width: 0;
-	}
+  }
 }
 
 header {
@@ -289,7 +290,7 @@ header .lang-picker a {
 }
 
 header .lang-picker li {
-  padding-bottom: 0
+  padding-bottom: 0;
 }
 
 header .lang-picker li button {
@@ -328,8 +329,9 @@ header .lang-picker li button:hover {
 @media screen and (min-width: 481px) {
   header li {
     padding-bottom: 12px;
-	}
-	header li.active::after {
+  }
+
+  header li.active::after {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -341,22 +343,25 @@ header .lang-picker li button:hover {
     border-top-color: #333;
     border-width: 14px;
     margin-left: -7px;
-	}
+  }
+
 	header li.active:first-child::after {
     margin-left: -14px;
-	}
+  }
+
 	header a,
 	header a:link,
 	header a:active {
     padding: 0 8px;
-	}
+  }
+
 	.nav-foundation {
     margin-left: 8px;
-	}
+  }
 }
 
 @media screen and (max-width: 480px) {
-	header li {
+  header li {
     width: 50%;
     float: left;
     padding: 0;
@@ -377,7 +382,7 @@ header .lang-picker li button:hover {
     position: relative;
     height: 1.5em;
     padding: 0;
-	}
+  }
 }
 
 #logo {
@@ -478,10 +483,10 @@ html {
   scroll-behavior: smooth;
 }
 
-@media(prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-	}
+  }
 }
 
 #scroll-to-top {
@@ -501,10 +506,10 @@ html {
   animation: buttonFade .5s 1s 1 forwards;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   #scroll-to-top span {
     display: none;
-	}
+  }
 }
 
 .anchor {
@@ -541,10 +546,11 @@ article a {
   .has-side-nav aside {
     width: 100%;
     float: none;
-	}
+  }
+  
 	.has-side-nav article {
     margin-left: 0;
-	}
+  }
 }
 
 a:hover .color-lightgray {
@@ -558,5 +564,5 @@ a:hover .color-lightgray {
 @media screen and (max-width: 480px) {
   html[dir=rtl] .has-side-nav article {
     margin-right: 0;
-	}
+  }
 }
