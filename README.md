@@ -11,9 +11,9 @@ You can find the original project specification:
 
 #### [Assignment Description Here](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
-#### [Project Code Repository Link]https://github.com/mosesmuchemi/css-grid-framework)
+#### [Project Code Repository Link](https://github.com/mosesmuchemi/css-grid-framework)
 
-#### [Live Version](#)
+#### [Live Version](https://mosesmuchemi.github.io/css-grid-framework/)
 
 #### Author
 
